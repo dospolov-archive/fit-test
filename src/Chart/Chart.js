@@ -1,7 +1,5 @@
 import React from 'react'
 
-const POSITION = 67
-
 // 100 = 100%
 // 50 = 75%
 // 20 = 60%
@@ -9,16 +7,13 @@ const POSITION = 67
 // -50 = 25%
 // -100 = 0%
 
-const MIN = -500
-const MAX = 500
-
-const Chart = () => {
+const Chart = ({ chart: { extremum, percent } }) => {
   return (
     <div className="chart">
-      <span className="chart-min">{MIN}</span>
+      <span className="chart-min">-{extremum}</span>
       <span className="chart-zero">0</span>
-      <span className="chart-position" style={{ left: `${POSITION}%` }}></span>
-      <span className="chart-max">{MAX}</span>
+      <span className="chart-position" style={{ left: `${percent}%` }}></span>
+      <span className="chart-max">{extremum}</span>
     </div>
   )
 }

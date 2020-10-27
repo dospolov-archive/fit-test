@@ -2,10 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background: #555;
+}
+
 .app {
-  height: 100vh;
-  width: 100vw;
   padding: 3vw;
+  min-height: 100vh;
+}
+
+.app h2 {
+  color: #bbb;
 }
 
 .chart {
@@ -19,27 +26,31 @@
 .chart-min {
   position: absolute;
   left: 1%;
-  z-index: 1;
+  z-index: 2;
 }
 
 .chart-zero {
   position: absolute;
   left: 50%;
-  z-index: 1;
+  z-index: 2;
+  text-align: center;
+  width: 20px;
+  margin-left: -10px;
 }
 
 .chart-max {
   position: absolute;
   right: 1%;
-  z-index: 1;
+  z-index: 2;
 }
 
 .chart-position {
   content: '';
-  width: 10px;
-  height: 10px;
+  width: 30px;
+  height: 30px;
+  margin-left: -15px;
   background: red;
-  top: 26px;
+  top: 16px;
   position: absolute;
   z-index: 1;
   border-radius: 50%;
@@ -62,5 +73,5 @@
   width: 16.666%;
   left: 83.333%;
   height: 100%;
-  background: rgb(205, 255, 186);
+  background: rgb(59, 199, 5);
 }
