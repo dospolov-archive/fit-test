@@ -1,3 +1,66 @@
-/* @tailwind base; */
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.app {
+  height: 100vh;
+  width: 100vw;
+  padding: 3vw;
+}
+
+.chart {
+  margin-top: 20px;
+  background: #555;
+  height: 63px;
+  padding-top: 20px;
+  position: relative;
+}
+
+.chart-min {
+  position: absolute;
+  left: 1%;
+  z-index: 1;
+}
+
+.chart-zero {
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+
+.chart-max {
+  position: absolute;
+  right: 1%;
+  z-index: 1;
+}
+
+.chart-position {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: red;
+  top: 26px;
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.chart:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 16.666%;
+  left: 66.666%;
+  height: 100%;
+  background: #888;
+}
+
+.chart:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 16.666%;
+  left: 83.333%;
+  height: 100%;
+  background: rgb(205, 255, 186);
+}
