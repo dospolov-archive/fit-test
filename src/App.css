@@ -60,8 +60,8 @@ body {
   content: '';
   position: absolute;
   top: 0;
-  width: 16.666%;
-  left: 66.666%;
+  width: 25%;
+  left: 50%;
   height: 100%;
   background: #888;
 }
@@ -70,8 +70,8 @@ body {
   content: '';
   position: absolute;
   top: 0;
-  width: 16.666%;
-  left: 83.333%;
+  width: 25%;
+  left: 75%;
   height: 100%;
   background: rgb(59, 199, 5);
 }

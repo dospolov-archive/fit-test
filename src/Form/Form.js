@@ -25,7 +25,7 @@ const Form = () => {
   ])
   const [chart, updateChart] = useState({
     extremum: rows.length * SLIDER_DOTS - rows.length,
-    percent: 50
+    percent: null
   })
 
   const calculate = () => {
@@ -154,7 +154,7 @@ const Form = () => {
           Посчитать совместимость
         </Button>
       </div>
-      <Chart {...{ chart }} />
+      {chart.percent !== null && <Chart {...{ chart }} />}
     </div>
   )
 }
