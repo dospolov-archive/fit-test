@@ -1,10 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-body {
-  background: #555;
-}
+@import '~antd/dist/antd.dark.css';
 
 .app {
   padding: 3vw;

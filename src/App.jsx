@@ -3,7 +3,7 @@ import Form from './Form'
 import './App.css'
 
 const App = () => (
-  <div className="bg-gray-800 text-gray-200 app">
+  <div className="app">
     <Form />
   </div>
 )
