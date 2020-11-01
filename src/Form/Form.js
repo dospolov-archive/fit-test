@@ -131,7 +131,11 @@ const Form = () => {
                     <Col span={14}>
                       <Input
                         value={title}
-                        placeholder="Что-то хорошее"
+                        placeholder={
+                          characteristic === 'positive'
+                            ? 'Что-то хорошее'
+                            : 'Что-то негативное'
+                        }
                         onChange={({ target: { value } }) =>
                           updateRowField(i, { title: value }, characteristic)
                         }
